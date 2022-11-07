@@ -1,0 +1,102 @@
+img {
+    height: 200px;
+    width: 400px;
+    transition: all  0.5s ;
+}
+
+img:hover {
+    height: 250px;
+    width: 500px;
+}
+
+body {
+    background: rgba(186, 212, 255, 0.5);
+}
+
+h1, h2{
+    font-family: 'Roboto Condensed', sans-serif; 
+}
+
+p{
+    font-family: 'Lato', sans-serif;
+}
+
+li {
+    font-family: 'Lato', sans-serif;
+}
+
+a{
+    font-family: 'Lato', sans-serif;
+}
+
+.content {
+    animation-name: fade-in;
+    animation-duration: 2s;
+    animation-timing-function:  ease;
+
+}
+
+.side-bar{
+    animation-name: fade-in;
+    animation-duration: 2s;
+    animation-timing-function:  ease;
+    
+}
+
+.image-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.image-grid > img {
+    margin: 10px;
+}
+
+#image-1 {
+    float: right;
+    margin: 15px;
+}
+
+.side-bar {
+    background: rgb(255, 227, 191);
+}
+
+.post {
+    border: 2px solid rgb(229, 158, 66);
+    margin: 10px;
+}
+
+.post-tittle {
+    margin-left: 5px;
+}
+
+.post-text {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.post > a {
+    margin-left: 5px;
+    margin-right: 5px;
+    text-decoration: none;
+    color: rgb(70, 137, 244);
+    transition: color 0.5s;
+}
+
+.post > a:hover {
+    color: rgb(186, 212, 255);
+}
+
+#main {
+    display: flex;
+    grid-template-columns: 70% 30%;
+    gap: 30px;
+}
+
+@keyframes fade-in {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+
